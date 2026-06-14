@@ -1,86 +1,49 @@
+HTML
 <!DOCTYPE html>
-<!--
-    Anything you put in between the double-dash arrow symbols shown around
-    this block of text is designated a 'comment' intended for human coders
-    and ignored by the computer. The top "<!DOCTYPE html>" line of code 
-    declares that this text file is to be interpreted as HTML code.
--->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulling Ink: The Art & Tech of Screen Printing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<html lang=en>
-<!--
-    This opening tag marks the start of the html code.  Everything below
-    until the </html> closing tag is part of this element. "lang" is an
-    attribute defining the language of the website. The value "en" 
-    indicates this site is written in English. We indent the content
-    inside an element to make it easier for people to read and understand.
--->
+    <header class="hero">
+        <h1>PULLING INK</h1>
+        <p>Where traditional craft meets digital new media.</p>
+    </header>
 
-    <head>
-    <!--Code *about* the website, NOT displayed in the browser window.-->
+    <main>
+        <section id="process-flow">
+            <h2>The Process</h2>
+            
+            <div class="step" id="step-1">
+                <h3>1. The Emblem (Digital Prep)</h3>
+                <p>Creating high-contrast film positives. Black ink blocks the UV light.</p>
+            </div>
 
-        <meta charset="UTF-8"> <!--Sets site to use standard characters.-->
+            <div class="step" id="step-2">
+                <h3>2. The Exposure</h3>
+                <p>Emulsion bakes under UV light. Unexposed areas wash away, creating the stencil.</p>
+            </div>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Sizes your site to the visitor's screen size -->
+            <div class="step" id="step-3">
+                <h3>3. The Setup</h3>
+                <p>Registering the screen on the press. Precision is everything.</p>
+            </div>
 
-        <meta name="author" content="Your Name">
-        <!--
-            Some tags like "meta" are self-closing. They have "attributes" 
-            but no inner content and they don't need or use a closing tag.
-        -->
+            <div class="step" id="step-4">
+                <h3>4. The Pull</h3>
+                <p>Flooding the screen and pulling the squeegee at a 45-degree angle.</p>
+            </div>
+        </section>
+    </main>
 
-        <title>ANTONIOS Projectname</title>
-        <!--The 'title' is what's displayed in the browser tab.-->
+    <footer>
+        <p>New Media & Technology Project © 2026</p>
+    </footer>
 
-        <link rel="stylesheet" href="/style.css">
-        <!--
-            HTML (HyperText Markup Language) code is for the website 
-            content. CSS (Cascading Style Sheets) code is for the website 
-            style. The line above tells the browser the file location and 
-            file name to find this code that you'll write/edit there.
-        -->
-
-        <link rel="icon" type="image/png" href="/favicon.png">
-        <!--
-            If you made/found a favicon, export/name it exactly favicon.png
-            and upload to the top level of your repo, then this line of
-            code will use it as your site icon in the browser tab.
-        -->
-
-    </head>
-
-    <body> <!--Everything to be displayed in the browser window.-->
-          
-        <!--example headings, paragraphs, lists-->
-        <h1> SCREEN PRINTING </h1>
-        <p> In my new media tech class, our screen printing project bridged traditional craftsmanship with digital design workflows. Using vector graphics software, we first created layered, high-contrast images optimized for stencil exposure—experimenting with halftones and duotones. After burning our designs onto screens, we printed them onto various substrates, from paper to cotton and eventually boxes, exploring how texture and transparency affect digital aesthetics in person. This process not only taught me the mechanics of analog but also how screen printing can critique digital culture, turning pixel based imperfections into, a beautiful meaning in life.  </p>
-        <h2>This is the second biggest heading type</h2>
-        <p>Another paragraph</p>
-        <h2>Another second-biggest-heading</h2>
-        <ul>
-            <li>use ul for bullet point (unordered) lists</li>
-            <li>use ol for numbered (ordered) lists</li>
-        </ul>
-
-        <!--example images (uploaded to repo's "images" directory)-->
-        <img 
-            src="images/ExactImageName.webp"
-            width="560" 
-            alt="Your description of image in words">
-
-        <!--example video (or other content from another webpage)-->
-        <iframe 
-            src="https://drive.google.com/file/d/FILE_ID/preview"
-            width="560" height="315"
-            allowfullscreen>
-        </iframe>
-        <!-- replace FILE_ID in the example link above with
-             exact text from your actual video's share link -->
-
-        <!--example links-->
-            <a href="/about.html">Link to page/file on your site</a>
-            <a href="https://github.com" target="_blank">Link to
-                external page on web (_blank opens in new tab)</a>
-
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
